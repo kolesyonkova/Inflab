@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText num1;
     EditText num2;
     TextView textView;
-    private String resRAZ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
