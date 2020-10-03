@@ -68,7 +68,9 @@
             android:id="@+id/result"
             android:layout_width="407dp"
             android:layout_height="127dp"
-            android:text="result" />
+            android:text="result"
+            android:freezesText="true"
+            />
 
     </LinearLayout>
 
