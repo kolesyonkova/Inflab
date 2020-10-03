@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else textView.setText("Error");
                 break;
             case R.id.button4:
-                if ((!num1.getText().toString().equals(""))&&(!num2.getText().toString().equals(""))){
+                if ((!num1.getText().toString().equals(""))&&(!num2.getText().toString().equals(""))&&(!num2.getText().toString().equals("0"))){
                     int el1=Integer.parseInt(num1.getText().toString());
                     int el2=Integer.parseInt(num2.getText().toString());
                     double resRAZ=el1/el2;
