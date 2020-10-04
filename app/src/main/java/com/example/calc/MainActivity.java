@@ -1,10 +1,9 @@
 package com.example.calc;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,7 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int el2=Integer.parseInt(num2.getText().toString());
                     int resRAZ=el1+el2;
                     textView.setText(Integer.toString(resRAZ));}
-                else textView.setText("Error");
+                else if(num1.getText().toString().equals("")&&num2.getText().toString().equals("")){textView.setText("заполните строки числами");}
+                else if (num1.getText().toString().equals("")){textView.setText("Строка с первым числом не заполнена");}
+                else if (num2.getText().toString().equals("")){textView.setText("Строка со вторым числом не заполнена");}
+                else textView.setText("error");
                 break;
             case R.id.button2:
                 if ((!num1.getText().toString().equals(""))&&(!num2.getText().toString().equals(""))){
@@ -51,7 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int el2=Integer.parseInt(num2.getText().toString());
                     int resRAZ=el1-el2;
                     textView.setText(Integer.toString(resRAZ));}
-                else textView.setText("Error");
+                else if(num1.getText().toString().equals("")&&num2.getText().toString().equals("")){textView.setText("заполните строки числами");}
+                else if (num1.getText().toString().equals("")){textView.setText("Строка с первым числом не заполнена");}
+                else if (num2.getText().toString().equals("")){textView.setText("Строка со вторым числом не заполнена");}
+                else textView.setText("error");
                 break;
             case R.id.button3:
                 if ((!num1.getText().toString().equals(""))&&(!num2.getText().toString().equals(""))){
@@ -59,14 +64,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int el2=Integer.parseInt(num2.getText().toString());
                     int resRAZ=el1*el2;
                     textView.setText(Integer.toString(resRAZ));}
-                else textView.setText("Error");
+                else if(num1.getText().toString().equals("")&&num2.getText().toString().equals("")){textView.setText("заполните строки числами");}
+                else if (num1.getText().toString().equals("")){textView.setText("Строка с первым числом не заполнена");}
+                else if (num2.getText().toString().equals("")){textView.setText("Строка со вторым числом не заполнена");}
+                else textView.setText("error");
                 break;
             case R.id.button4:
                 if ((!num1.getText().toString().equals(""))&&(!num2.getText().toString().equals(""))&&(!num2.getText().toString().equals("0"))){
                     int el1=Integer.parseInt(num1.getText().toString());
                     int el2=Integer.parseInt(num2.getText().toString());
-                    double resRAZ=el1/el2;
-                    textView.setText(Double.toString(resRAZ));}
+                    int resRAZ=el1/el2;
+                    textView.setText(Integer.toString(resRAZ));}
+                else if(num1.getText().toString().equals("")&&num2.getText().toString().equals("")){textView.setText("заполните строки числами");}
+                else if (num1.getText().toString().equals("")){textView.setText("Строка с первым числом не заполнена");}
+                else if (num2.getText().toString().equals("")){textView.setText("Строка со вторым числом не заполнена");}
                 else textView.setText("Error");
                 break;
         }

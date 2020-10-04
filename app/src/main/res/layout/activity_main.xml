@@ -7,9 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="418dp"
-        android:layout_height="239dp"
+        android:layout_width="411dp"
+        android:layout_height="244dp"
+        android:layout_margin="10dp"
         android:orientation="vertical"
+        app:layout_goneMarginLeft="10dp"
+        app:layout_goneMarginRight="10dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="1dp">
@@ -18,6 +21,9 @@
             android:id="@+id/number1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
             android:hint="Введите первое число"
             android:inputType="numberDecimal" />
@@ -26,6 +32,9 @@
             android:id="@+id/number2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:ems="10"
             android:hint="Введите второе число"
             android:inputType="numberDecimal" />
@@ -33,6 +42,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <Button
@@ -66,11 +77,12 @@
 
         <TextView
             android:id="@+id/result"
-            android:layout_width="407dp"
-            android:layout_height="127dp"
-            android:text="result"
+            android:layout_width="390dp"
+            android:layout_height="101dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:freezesText="true"
-            />
+            android:text="result" />
 
     </LinearLayout>
 
